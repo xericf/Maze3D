@@ -1,0 +1,10 @@
+version: "3.8"  # docker compose currently used
+
+services:
+  app:
+    container_name: maze3D
+    image: maze3d-image
+    build:
+      context: .
+    ports:
+      - 3000:3000
